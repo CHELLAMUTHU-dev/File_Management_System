@@ -1,0 +1,211 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+}
+
+a{
+  color: rgb(10, 183, 241);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.error{
+  color: red;
+}
+
+.login-page {
+
+  height: 100vh;
+  background-image: url("./assets/images/login.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (max-width:768px) {
+    align-items: center;
+  }
+}
+
+
+.register-page{
+   height: 100vh;
+  background-image: url("./assets/images/register.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  @media (max-width:768px) {
+    align-items: center;
+  }
+
+}
+
+.auth-page{
+  .form-card {
+    background-color: #f4f4f9;
+    width: min(50vw, 400px);
+    display: flex;
+    flex-direction: column;
+    padding: 4px 25px;
+    gap: 5px;
+    border-radius: 15px;
+    margin-right: 150px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    @media (max-width:768px){
+      margin-right: 0;
+      justify-content: center;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: "Roboto";
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(194, 189, 189);
+    outline: none;
+    font-size: 1.02rem;
+    &::placeholder {
+      font-size: 1em;
+    }
+    &:focus {
+      outline: 1px solid rgb(57, 187, 230);
+    }
+  }
+
+  button{
+    background-color: rgb(38, 200, 240);
+    border: none;
+    outline: none;
+    padding: 10px;
+    align-self: flex-end;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    :hover{
+      background-color: rgb(16, 175, 175);
+    }
+  }
+  .password-checkbox{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  input[type="checkbox"]{
+      outline: none;
+  }
+
+  p{
+    margin: 0;
+  }
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 80px 8px 20px;
+
+  @media (max-width:768px) {
+    padding: 8px 20px;
+  }
+
+  h3{
+    color: tomato;
+    font-size:1.9rem;
+  }
+
+  button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.dropzone {
+  background: #fff;
+  border: 2px dashed #0077ff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px;
+  margin: 20px;
+  cursor: pointer;
+
+  .progress {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+  .progress-bar {
+  background: #0077ff;
+  color: white;
+  text-align: center;
+  height: 20px;
+}
+
+.active{
+  border-color: #007bff;
+  background-color: #e9f3ff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+}
+
+
+
+
+
+.file-list {
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+  button{
+    background-color: red;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
+}
+  
