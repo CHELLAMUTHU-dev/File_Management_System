@@ -18,8 +18,7 @@ export const Register = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefult();
-
+    e.preventDefault();
     try {
       await api.post("/auth/register", form);
       navigate("/login");
@@ -55,7 +54,7 @@ export const Register = () => {
             onChange={eventHandler}
           />
           <div className="password-checkbox">
-            <input type="checkbox" id="showPassword" />
+            <input type="checkbox" id="showPassword" onClick={() => setIsShowPassword(prev => !prev)}/>
             <label htmlFor="showPassword">Show Password</label>
           </div>
           <button type="submit">Register</button>
