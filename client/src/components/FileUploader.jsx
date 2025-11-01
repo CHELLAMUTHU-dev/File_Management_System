@@ -21,7 +21,7 @@ const FileUploader = ({onUpload}) => {
       setProgress(0);
       onUpload()
     } catch (error) {
-      setMessage("Upload failed");
+      setMessage(error.message);
       setProgress(0);
     }
   };
