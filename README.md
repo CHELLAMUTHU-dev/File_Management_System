@@ -9,7 +9,7 @@ A MERN stack file management app that allows users to upload, view, and manage f
 - User Authentication (Register/Login)
 - Secure File Uploads
 - MongoDB Integration for Data Storage
-- File Delete options
+- File Delete, share, and download options
 - Responsive UI (React + SCSS )
 
 ---
@@ -71,12 +71,15 @@ git clone https://github.com/CHELLAMUTHU-dev/File_Management_System.git
 
 - POST	-   /api/auth/register     - Register new user
 - POST-	    /api/auth/login        - User login
-- POST-	    /api/files/upload	   - Upload file
-- GET	 -  /api/files	           - Get all uploaded files
-- DELETE -	/api/files/:id         - Delete a file
+- POST-	    /api/file/upload	   - Upload file
+- GET	 -  /api/file	           - Get all uploaded files
+- DELETE -	/api/file/:id         - Delete a file 
+- SHARE -  /api/file/share/:id    - It Create a sharable link
+- Download - /api/file/shared/:shareId - Download File
 
 ## 📦 Project Preview:
 
-client/src/assets/screenShots
+client/src/assets/screenshots
+
 
 
