@@ -7,6 +7,8 @@ const fileSchema = new mongoose.Schema({
     mimetype:String,
     owner:{type:mongoose.Schema.Types.ObjectId,ref: "User"},
     folder:{type:mongoose.Schema.Types.ObjectId,ref:"Folder", default:null},
+    shareId: { type: String, unique: true }, 
+    expiresAt: Date,
     createdAt:{type:Date, default:Date.now}
 })
 
