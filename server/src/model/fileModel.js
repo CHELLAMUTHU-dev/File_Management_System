@@ -9,7 +9,7 @@ const fileSchema = new mongoose.Schema({
   owner: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
   shareId: {
     type: String,
-    default: uuidv4,
+    default:() => uuidv4(),
     unique: true,  
   },
 });
